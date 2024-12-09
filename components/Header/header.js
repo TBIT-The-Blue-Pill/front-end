@@ -39,10 +39,20 @@ export default function Header() {
                 alignContent="center"
                 gap="5px"
             >
-                <Button variant="contained" color="primary" sx={{borderRadius: "16px"}}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    sx={{ borderRadius: "16px" }}
+                    onClick={() => { router.push("/login") }}
+                >
                     Login
                 </Button>
-                <Button variant="contained" color="success" sx={{borderRadius: "16px"}}>
+                <Button
+                    variant="contained"
+                    color="success"
+                    sx={{ borderRadius: "16px" }}
+                    onClick={() => { router.push("/register") }}
+                >
                     Join
                 </Button>
             </Box>
